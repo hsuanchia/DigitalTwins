@@ -1,11 +1,11 @@
-# Digital twins
+# Digital twins with questionaire
 Digital twins project done with NCCU Public Administration  
 Special thanks to 蕭乃沂老師、郭毓倫學長 & 陳智彬學長  
 
 # Motivation
 在進行有效的問卷調查時，理想上需要受訪者能夠忠實反映自身立場，使填答內容不會過於偏激或失真。然而在實際操作中，除了需要蒐集大量樣本才能觀察出民意趨勢之外，這個過程也往往相當耗時耗力；同時，也常遇到部分受訪者的回答過於極端，導致該筆資料難以使用，進一步影響整體問卷品質。
 
-基於上述問題，本研究希望初步探討是否能運用大型語言模型（LLM）來模擬真實的民意問卷填答行為。透過建立大量模擬樣本，在降低時間與人力成本的前提下，嘗試進行各類公共政策議題的初步民意調查，作為後續實際問卷設計與分析的參考。
+基於上述問題，本研究希望初步探討是否能運用大型語言模型（LLM）來模擬真實的民意問卷填答行為。未來希望能透過建立大量模擬樣本，在降低時間與人力成本的前提下，嘗試進行各類公共政策議題的初步民意調查，作為後續實際問卷設計與分析的參考。
 
 # Dataset
 由政大公行系提供的問卷資料，該問卷所要調查的問題為  
@@ -24,4 +24,11 @@ Special thanks to 蕭乃沂老師、郭毓倫學長 & 陳智彬學長
 ![Workflow](imgs/digital_twins_workflow_eng.png)
 # Experiment results
 
+# Code
+* ask_ChatGPT.py
+    * 用來在本地端大量向ChatGPT問問題並將回答記錄起來
+* fine-tune_ChatGPT.py
+    * 在進行fine-tune之前做資料前處理
+* finetune_evaluate.py
+    * 對fine-tune之後的模型進行預測後，從excel中將資料取出並統計想要的數據
 # Future work
